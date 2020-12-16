@@ -27,6 +27,7 @@ target/
 .settings/
 .project
 .classpath
+.metadata
 
 # Vscode
 .vscode/
