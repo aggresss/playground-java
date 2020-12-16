@@ -1,4 +1,4 @@
-package cn.router7;
+package cn.router7.abstractfactory;
 
 /**
  * Hello world!
