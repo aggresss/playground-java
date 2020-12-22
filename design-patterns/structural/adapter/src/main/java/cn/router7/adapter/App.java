@@ -1,18 +1,15 @@
 package cn.router7.adapter;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 /**
  * Hello world!
  *
  */
-public class App
-{
+public class App {
 
-    private static final Logger log = LoggerFactory.getLogger(App.class);
-    public static void main( String[] args )
-    {
-        log.info( "Hello World!" );
+    public static void main(String[] args) {
+        // The captain can only operate rowing boats but with adapter he is able to
+        // use fishing boats as well
+        var captain = new Captain(new FishingBoatAdapter());
+        captain.row();
     }
 }
