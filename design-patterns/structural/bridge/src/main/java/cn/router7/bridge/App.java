@@ -1,4 +1,4 @@
-package cn.router7.singleton;
+package cn.router7.bridge;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
