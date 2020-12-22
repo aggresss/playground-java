@@ -1,4 +1,4 @@
-package cn.rotuer7.prototype;
+package cn.router7.prototype;
 
 public abstract class Mage implements Prototype {
 

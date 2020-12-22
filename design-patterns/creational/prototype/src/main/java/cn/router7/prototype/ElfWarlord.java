@@ -1,26 +1,26 @@
-package cn.rotuer7.prototype;
+package cn.router7.prototype;
 
-public class ElfMage extends Mage {
+public class ElfWarlord extends Warlord {
 
     private final String helpType;
 
-    public ElfMage(String helpType) {
+    public ElfWarlord(String helpType) {
         this.helpType = helpType;
     }
 
-    public ElfMage(ElfMage elfMage) {
-        super(elfMage);
-        this.helpType = elfMage.helpType;
+    public ElfWarlord(ElfWarlord elfWarlord) {
+        super(elfWarlord);
+        this.helpType = elfWarlord.helpType;
     }
 
     @Override
-    public ElfMage copy() {
-        return new ElfMage(this);
+    public ElfWarlord copy() {
+        return new ElfWarlord(this);
     }
 
     @Override
     public String toString() {
-        return "Elven mage helps in " + helpType;
+        return "Elven warlord helps in " + helpType;
     }
 
     @Override
@@ -34,7 +34,7 @@ public class ElfMage extends Mage {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        var other = (ElfMage) obj;
+        var other = (ElfWarlord) obj;
         if (helpType == null) {
             return other.helpType == null;
         }

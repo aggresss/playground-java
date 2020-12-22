@@ -1,26 +1,26 @@
-package cn.rotuer7.prototype;
+package cn.router7.prototype;
 
-public class OrcWarlord extends Warlord {
+public class OrcMage extends Mage {
 
     private final String weapon;
 
-    public OrcWarlord(String weapon) {
+    public OrcMage(String weapon) {
         this.weapon = weapon;
     }
 
-    public OrcWarlord(OrcWarlord orcWarlord) {
-        super(orcWarlord);
-        this.weapon = orcWarlord.weapon;
+    public OrcMage(OrcMage orcMage) {
+        super(orcMage);
+        this.weapon = orcMage.weapon;
     }
 
     @Override
-    public OrcWarlord copy() {
-        return new OrcWarlord(this);
+    public OrcMage copy() {
+        return new OrcMage(this);
     }
 
     @Override
     public String toString() {
-        return "Orcish warlord attacks with " + weapon;
+        return "Orcish mage attacks with " + weapon;
     }
 
     @Override
@@ -34,7 +34,7 @@ public class OrcWarlord extends Warlord {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        var other = (OrcWarlord) obj;
+        var other = (OrcMage) obj;
         if (weapon == null) {
             return other.weapon == null;
         }

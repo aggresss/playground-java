@@ -1,4 +1,4 @@
-package cn.rotuer7.prototype;
+package cn.router7.prototype;
 
 public class HeroFactoryImpl implements HeroFactory {
 

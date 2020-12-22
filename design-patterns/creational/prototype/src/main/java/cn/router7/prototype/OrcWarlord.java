@@ -1,26 +1,26 @@
-package cn.rotuer7.prototype;
+package cn.router7.prototype;
 
-public class OrcBeast extends Beast {
+public class OrcWarlord extends Warlord {
 
     private final String weapon;
 
-    public OrcBeast(String weapon) {
+    public OrcWarlord(String weapon) {
         this.weapon = weapon;
     }
 
-    public OrcBeast(OrcBeast orcBeast) {
-        super(orcBeast);
-        this.weapon = orcBeast.weapon;
+    public OrcWarlord(OrcWarlord orcWarlord) {
+        super(orcWarlord);
+        this.weapon = orcWarlord.weapon;
     }
 
     @Override
-    public OrcBeast copy() {
-        return new OrcBeast(this);
+    public OrcWarlord copy() {
+        return new OrcWarlord(this);
     }
 
     @Override
     public String toString() {
-        return "Orcish wolf attacks with " + weapon;
+        return "Orcish warlord attacks with " + weapon;
     }
 
     @Override
@@ -34,11 +34,10 @@ public class OrcBeast extends Beast {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        var other = (OrcBeast) obj;
+        var other = (OrcWarlord) obj;
         if (weapon == null) {
             return other.weapon == null;
         }
         return weapon.equals(other.weapon);
     }
-
 }
