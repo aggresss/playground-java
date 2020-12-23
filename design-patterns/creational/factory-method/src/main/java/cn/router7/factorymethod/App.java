@@ -4,8 +4,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Hello world!
+ * Factory is an object for creating other objects, it providing Providing a static method to
+ * create and return objects of varying classes, in order to hide the implementation logic
+ * and makes client code focus on usage rather then objects initialization and management.
  *
+ * <p>In this example the CarFactory is the factory class and it provides a static method to
+ * create different cars.
  */
 public class App {
 
