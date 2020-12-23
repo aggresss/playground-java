@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
  */
 public class SergeantVisitor implements UnitVisitor {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(SergeantVisitor.class);
+    private static final Logger log = LoggerFactory.getLogger(SergeantVisitor.class);
 
     @Override
     public void visitSoldier(Soldier soldier) {
@@ -17,7 +17,7 @@ public class SergeantVisitor implements UnitVisitor {
 
     @Override
     public void visitSergeant(Sergeant sergeant) {
-        LOGGER.info("Hello {}", sergeant);
+        log.info("Hello {}", sergeant);
     }
 
     @Override

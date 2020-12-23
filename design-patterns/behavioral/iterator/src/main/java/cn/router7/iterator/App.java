@@ -25,26 +25,26 @@ import cn.router7.iterator.list.TreasureChest;
  */
 public class App {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(App.class);
+    private static final Logger log = LoggerFactory.getLogger(App.class);
 
     private static final TreasureChest TREASURE_CHEST = new TreasureChest();
 
     private static void demonstrateTreasureChestIteratorForType(ItemType itemType) {
-        LOGGER.info("------------------------");
-        LOGGER.info("Item Iterator for ItemType " + itemType + ": ");
+        log.info("------------------------");
+        log.info("Item Iterator for ItemType " + itemType + ": ");
         var itemIterator = TREASURE_CHEST.iterator(itemType);
         while (itemIterator.hasNext()) {
-            LOGGER.info(itemIterator.next().toString());
+            log.info(itemIterator.next().toString());
         }
     }
 
     private static void demonstrateBstIterator() {
-        LOGGER.info("------------------------");
-        LOGGER.info("BST Iterator: ");
+        log.info("------------------------");
+        log.info("BST Iterator: ");
         var root = buildIntegerBst();
         var bstIterator = new BstIterator<>(root);
         while (bstIterator.hasNext()) {
-            LOGGER.info("Next node: " + bstIterator.next().getVal());
+            log.info("Next node: " + bstIterator.next().getVal());
         }
     }
 

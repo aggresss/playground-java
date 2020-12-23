@@ -20,7 +20,7 @@ import org.slf4j.LoggerFactory;
  */
 public class App {
 
-  private static final Logger LOGGER = LoggerFactory.getLogger(App.class);
+  private static final Logger log = LoggerFactory.getLogger(App.class);
 
   /**
    * Program entry point.
@@ -39,7 +39,7 @@ public class App {
     weather.timePasses();
 
     // Generic observer inspired by Java Generics and Collection by Naftalin & Wadler
-    LOGGER.info("--Running generic version--");
+    log.info("--Running generic version--");
     var genericWeather = new GWeather();
     genericWeather.addObserver(new GOrcs());
     genericWeather.addObserver(new GHobbits());
