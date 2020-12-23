@@ -1,8 +1,5 @@
 package cn.router7.templatemethod;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 /**
  * Template Method defines a skeleton for an algorithm. The algorithm subclasses
  * provide implementation for the blank parts.
